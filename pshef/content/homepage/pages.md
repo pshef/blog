@@ -1,14 +1,10 @@
 ---
-title: Christopher
+title: Pages
 draft: false
-# Section you want to display
-section:
-# Pages count
-count:
-# Options: card, plain and masonry.
-style:
+section: posts
+count: 5
 
-weight:
+weight: 2
 widget:
   handler: pages
 
@@ -30,5 +26,5 @@ widget:
     # Options: center, top, right, bottom, left.
     position:
     # Options: fixed, local, scroll.
-    attachment: 
+    attachment:
 ---

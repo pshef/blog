@@ -7,7 +7,7 @@ theme: eureka
 
 paginate: 3
 copyright: >
-	&copy; 2022 <a href="https://pshef.work/">PShef</a>
+  &copy; 2022 <a href="https://pshef.work/">PShef</a>
 enableEmoji: true
 enableGitInfo: false
 summaryLenght: 75
@@ -16,22 +16,22 @@ defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 
 markup:
-	highlight:
-		codeFences: false
-		noClasses: false
-	tableOfContents:
-		startLevel: 2
-		endLevel: 6
-		ordered: false
-	goldmark:
-		renderer:
-			unsafe: true
+  highlight:
+    codeFences: false
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+  goldmark:
+    renderer:
+      unsafe: true
 
 taxonomies:
-	category: categories
-	tag: tags
-	series: series
-	author: authors
+  category: categories
+  tag: tags
+  series: series
+  author: authors
 
 build:
-	useResourceCacheWhen: always
+  useResourceCacheWhen: always

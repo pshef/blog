@@ -2,3 +2,36 @@ baseURL: https://pshef.github.io/
 languageCode: en-us
 title: PShef's Blog
 theme: eureka
+
+# The following is copied and possibly modified from the exampleSite config.yaml file
+
+paginate: 3
+copyright: >
+	&copy; 2022 <a href="https://pshef.work/">PShef</a>
+enableEmoji: true
+enableGitInfo: false
+summaryLenght: 75
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+markup:
+	highlight:
+		codeFences: false
+		noClasses: false
+	tableOfContents:
+		startLevel: 2
+		endLevel: 6
+		ordered: false
+	goldmark:
+		renderer:
+			unsafe: true
+
+taxonomies:
+	category: categories
+	tag: tags
+	series: series
+	author: authors
+
+build:
+	useResourceCacheWhen: always

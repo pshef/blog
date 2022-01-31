@@ -1,0 +1,7 @@
+[submodule "pshef/themes/eureka"]
+	path = pshef/themes/eureka
+	url = https://github.com/wangchucheng/hugo-eureka.git
+[submodule "pshef/public"]
+	path = pshef/public
+	url = https://github.com/pshef/pshef.github.io.git
+	branch = main

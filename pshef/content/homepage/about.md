@@ -2,6 +2,30 @@
 title: About PShef
 draft: true
 authors: Christopher
+
+weight: 1
+widget:
+  handler: about
+
+  # Options: sm, md, lg and xl. Default is md.
+  width:
+
+  sidebar:
+    # Options: left and right. Leave blank to hide.
+    position:
+    # Options: sm, md, lg and xl. Default is md.
+    scale:
+  
+  background:
+    # Options: primary, secondary, tertiary or any valid color value. Default is primary.
+    color: secondary
+    image:
+    # Options: auto, cover and contain. Default is auto.
+    size:
+    # Options: center, top, right, bottom, left.
+    position:
+    # Options: fixed, local, scroll.
+    attachment:
 ---
 I've always poked at computers. When I was a little kid, a family friend was throwing away an old computer and we took it home, and I took the whole thing apart. I couldn't figure out how to put it back together, but I wanted to make a ROBOT!!! Of course, I didn't make a robot out of the old tower, and it ended up collecting dust in a box in the basement.
 

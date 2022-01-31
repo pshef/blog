@@ -1,0 +1,4 @@
+baseURL = https://pshef.github.io/
+languageCode = en-us
+title = PShef's Blog
+theme = eureka

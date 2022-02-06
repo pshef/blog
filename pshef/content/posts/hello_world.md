@@ -5,4 +5,4 @@ draft: false
 authors: Christopher
 ---
 
-The millionth time is the charm. Here's my latest attempt at a blog.
+I've had blogs in the past for various reasons, including a WordPress blog for infosec that had like a grand total of three posts. I hate WordPress. So I deleted it, and made this one instead. Have fun checking this out!

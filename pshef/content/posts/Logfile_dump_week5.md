@@ -37,3 +37,6 @@ This was the final week before taking my A+ 1002 exam, so that guided the majori
 
 ## Saturday 02/05
 * Last day of studying. Beyond ready to just get this test over with. I will post an update separate from my weekly `Logfile_dump` posts.
+
+
+Got any questions or feedback? Feel free to reach out on [Twitter](https://twitter.com/pshef5)!

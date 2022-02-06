@@ -6,10 +6,7 @@ echo -e "Deploying updates to GitHub..."
 hugo -t eureka
 
 # Add commit message
-msg="rebuilding site `date`"
-if [$# -eq 1]
-	then msg="$1"
-fi
+msg="$1"
 
 # Add changes to root git
 git add .

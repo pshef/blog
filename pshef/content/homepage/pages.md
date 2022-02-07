@@ -1,5 +1,5 @@
 ---
-title: Pages
+title: Blog posts
 draft: false
 section: posts
 count: 5

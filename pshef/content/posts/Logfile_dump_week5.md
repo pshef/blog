@@ -2,7 +2,6 @@
 title: "Logfile_dump Week 5"
 date: 2022-02-06T14:04:01-06:00
 draft: false
-author: Christopher
 ---
 
 This was the final week before taking my A+ 1002 exam, so that guided the majority of my time.

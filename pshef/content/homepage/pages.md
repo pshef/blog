@@ -4,7 +4,7 @@ draft: false
 section: posts
 count: 5
 
-weight: 2
+weight: 1
 widget:
   handler: pages
 

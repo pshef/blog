@@ -3,7 +3,7 @@ title: About PShef
 draft: false
 authors: Christopher
 
-weight: 1
+weight: 2
 widget:
   handler: about
 

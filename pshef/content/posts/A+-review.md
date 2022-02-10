@@ -1,7 +1,7 @@
 ---
 title: "A+ Review"
 date: 2022-02-06T15:32:02-06:00
-draft: true
+draft: false
 ---
 
 Sometime last year, I decided that I wanted to get into information security. I have no post-high school education, my limited college education had nothing to do with computers, and I've spent the entirety of my working life in retail or warehouse work. Once I decided to make the jump, the first thing that I read was that I need to build my foundational knowledge, and that the A+ is the most basic of basic stuff that people should know. (What's an ITF+ again?)

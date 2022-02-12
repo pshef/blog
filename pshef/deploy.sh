@@ -10,6 +10,7 @@ git add .
 echo -e "What is your commit message?"
 read msg_blog
 echo -e "Deploying updates to GitHub with commit message \"$msg_blog\"."
+echo
 
 # Commit changes to root git
 git commit -m "$msg_blog"
@@ -39,6 +40,7 @@ if [ "$public_update" == y ]; then
 		echo
 		echo -e "What is your /public commit message?"
 		read msg_public
+		echo
 
 		# Commit changes to /public
 		git commit -m "$msg_public"

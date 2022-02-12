@@ -25,8 +25,20 @@ cd public
 # Adding /public changes
 git add .
 
+echo -e "Do you want to use the same commit message? (y/n)"
+
+read ans
+
+if [ "$ans" == y ]
+then
 # Commit /public changes
-git commit -m "$msg"
+	git commit -m "$msg"
+else
+	echo -e "What is your second commit message?"
+	read msg2
+	git commit -m "$msg2"
+
+fi
 
 # Push /public changes
 git push origin main
@@ -35,5 +47,8 @@ git push origin main
 cd ..
 
 echo 
-echo
-echo -e "You updated the repo with commit message \"$msg\". Thanks!"
+if ["$ans" == y ]
+then
+	echo -e "You updated the repo with commit message \"$msg\". Thanks!"
+else
+	echo -e "You updated the repo with commit messages \"$msg\" and \"$msg2\". Thanks!"

@@ -1,12 +1,14 @@
 #! /bin/bash
 
-echo -e "Deploying updates to GitHub..."
-
 # Build project
 hugo -t eureka
 
+echo -e "What is your commit message?"
+
 # Add commit message
-msg="$1"
+read msg
+
+echo -e "Deployting updates to GitHub with commit message $msg"
 
 # Add changes to root git
 git add .

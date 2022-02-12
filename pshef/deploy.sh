@@ -49,11 +49,13 @@ if [ "$public_update" == y ]; then
 		git push origin main
 
 		# Echo finishing message 1
+		cd ..
 		echo
 		echo
 		echo -e "You updated your repos with commit messages \"$msg_blog\" and \"$msg_public\". Thanks!"
 	else
 		# Echo finishing message 2
+		cd ..
 		echo
 		echo
 		echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"

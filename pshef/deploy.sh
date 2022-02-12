@@ -24,42 +24,48 @@ echo -e "Do you want to update the blog? (y/n)"
 read public_update
 
 if [ "$public_update" == y ]; then
-cd public
+	cd public
 		
-# Add /public changes
-git add .
+	# Add /public changes
+	git add .
 	
-# Add /public message
-echo	
-echo -e "Do you want to use the same commit message? (y/n)"
-read public_ans
+	# Add /public message
+	echo	
+	echo -e "Do you want to use the same commit message? (y/n)"
+	read public_ans
 	
-if [ "$public_ans" == n ]; then
-# Add /public commit message
-echo
-echo -e "What is your /public commit message?"
-read msg_public
-echo
+	if [ "$public_ans" == n ]; then
+		# Add /public commit message
+		echo
+		echo -e "What is your /public commit message?"
+		read msg_public
+		echo
 		
-# Commit changes to /public
-git commit -m "$msg_public"
+		# Commit changes to /public
+		git commit -m "$msg_public"
 	
-# Push /public changes
-git push origin main
+		# Push /public changes
+		git push origin main
 	
-# Echo finishing message 1
-cd ..
-echo
-echo
-echo -e "You updated your repos with commit messages \"$msg_blog\" and \"$msg_public\". Thanks!"
-else
-# Echo finishing message 2
-cd ..
-echo
-echo
-echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"
-fi
-cd ..
+		# Echo finishing message 1
+		cd ..
+		echo
+		echo
+		echo -e "You updated your repos with commit messages \"$msg_blog\" and \"$msg_public\". Thanks!"
+	else
+		# Commit changes to /public
+		git commit -m "$msg_blog"
+
+		# Push /public changes
+		git push origin main
+		
+		# Echo finishing message 2
+		cd ..
+		echo
+		echo
+		echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"
+	fi
+	cd ..
 else
 # Echo finishing message 3
 echo

@@ -23,9 +23,9 @@ echo
 echo -e "Do you want to update the blog? (y/n)"
 read public_update
 
+cd public
+
 if [ "$public_update" == y ]; then
-	# Change to public folder
-	cd public
 	
 	# Add /public changes
 	git add .
@@ -60,6 +60,7 @@ if [ "$public_update" == y ]; then
 		echo
 		echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"
 	fi
+	cd ..
 else
 	# Echo finishing message 3
 	echo

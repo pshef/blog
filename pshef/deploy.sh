@@ -1,54 +1,65 @@
 #! /bin/bash
 
-# Build project
+# build project
 hugo -t eureka
-
-echo -e "What is your commit message?"
-
-# Add commit message
-read msg
-
-echo -e "Deployting updates to GitHub with commit message $msg"
 
 # Add changes to root git
 git add .
 
-# Commit root changes
-git commit -m "$msg"
+# Add root commit message
+echo -e "What is your commit message?"
+read msg_blog
+echo -e "Deploying updates to GitHub with commit message \"$msg_blog\"."
+
+# Commit changes to root git
+git commit -m "$msg_blog"
 
 # Push root changes
 git push origin main
 
-# Changing to Public Folder
-cd public
+# /public repo update
+echo
+echo -e "Do you want to update the blog? (y/n)"
+read public_update
 
-# Adding /public changes
-git add .
-
-echo -e "Do you want to use the same commit message? (y/n)"
-
-read ans
-
-if [ "$ans" == y ]
+if [ "$public_update" == y ]
 then
-# Commit /public changes
-	git commit -m "$msg"
+	# Change to public folder
+	cd public
+	
+	# Add /public changes
+	git add .
+
+	# Add /public message
+	echo	
+	echo -e "Do you want to use the same commit message? (y/n)"
+	read public_ans
+
+	if [ "$public_ans" == n ]
+	then
+		# Add /public commit message
+		echo
+		echo -e "What is your /public commit message?"
+		read msg_public
+
+		# Commit changes to /public
+		git commit -m "$msg_public"
+
+		# Push /public changes
+		git push origin main
+
+		# Echo finishing message 1
+		echo
+		echo
+		echo -e "You updated your repos with commit messages \"$msg_blog\" and \"$msg_public\". Thanks!"
+	else
+		# Echo finishing message 2
+		echo
+		echo
+		echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"
+
 else
-	echo -e "What is your second commit message?"
-	read msg2
-	git commit -m "$msg2"
-
-fi
-
-# Push /public changes
-git push origin main
-
-# Go back to Project Root
-cd ..
-
-echo 
-if ["$ans" == y ]
-then
-	echo -e "You updated the repo with commit message \"$msg\". Thanks!"
-else
-	echo -e "You updated the repo with commit messages \"$msg\" and \"$msg2\". Thanks!"
+	# Echo finishing message 3
+	echo
+	echo
+	echo -e "You updated your repo with commit message \"$msg_blog\". Thanks!"

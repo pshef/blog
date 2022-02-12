@@ -52,13 +52,13 @@ then
 		echo
 		echo
 		echo -e "You updated your repos with commit messages \"$msg_blog\" and \"$msg_public\". Thanks!"
-	else
+	elif [ "$public_ans" == y ]
 		# Echo finishing message 2
 		echo
 		echo
 		echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"
 
-else
+elif [ "$public_update" == n ]
 	# Echo finishing message 3
 	echo
 	echo

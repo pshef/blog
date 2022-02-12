@@ -33,3 +33,7 @@ git push origin main
 
 # Go back to Project Root
 cd ..
+
+clear
+
+echo -e "You updated the repo with commit message $msg. Thanks!"

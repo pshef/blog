@@ -22,8 +22,7 @@ echo
 echo -e "Do you want to update the blog? (y/n)"
 read public_update
 
-if [ "$public_update" == y ]
-then
+if [ "$public_update" == y ]; then
 	# Change to public folder
 	cd public
 	
@@ -35,8 +34,7 @@ then
 	echo -e "Do you want to use the same commit message? (y/n)"
 	read public_ans
 
-	if [ "$public_ans" == n ]
-	then
+	if [ "$public_ans" == n ]; then
 		# Add /public commit message
 		echo
 		echo -e "What is your /public commit message?"
@@ -52,13 +50,13 @@ then
 		echo
 		echo
 		echo -e "You updated your repos with commit messages \"$msg_blog\" and \"$msg_public\". Thanks!"
-	else "$public_ans" == y ]
+	else
 		# Echo finishing message 2
 		echo
 		echo
 		echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"
 	fi
-elif [ "$public_update" == n ]
+else
 	# Echo finishing message 3
 	echo
 	echo

@@ -21,7 +21,7 @@ author: Christopher
 - More MS-900 videos!
 
 ## Thursday 02/10
-- I'm *somewhat* new to scripting so I found a interesting [https://www.linode.com/docs/guides/intro-bash-shell-scripting](blog series from Linode), and I wanted to incorporate some of that into my `deploy.sh(it)` script.
+- I'm *somewhat* new to scripting so I found a interesting [blog post from Linode](https://www.linode.com/docs/guides/intro-bash-shell-scripting/), and I wanted to incorporate some of that into my `deploy.sh(it)` script.
 
 ## Friday 02/11
 - Rewrote the `deploy.sh(it)` script. I wanted to allow for changes to the blog repository without necessarily updating the website, and also allow for the ability to use different commit messages for each repo. I also didn't like having to run the script with the commit message at the same time (e.g. `$ ./deploy.sh {message}`) and wanted to have the script prompt for messages.

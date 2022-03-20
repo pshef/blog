@@ -68,6 +68,10 @@ if [ "$public_update" == y ]; then
 		echo
 		echo
 		echo -e "You updated your repos with commit message \"$msg_blog\". Thanks!"
+
+		git add .
+		git commit -m "$msg_blog"
+		git push origin main
 	fi
 	cd ..
 else

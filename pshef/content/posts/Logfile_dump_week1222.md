@@ -1,0 +1,12 @@
+---
+title: "Logfile_dump Week 12/22"
+date: 2022-03-27T13:56:05-05:00
+draft: false
+author: Christopher
+---
+
+This week I spent a lot of time working on the [BHIS Zine](https://www.blackhillsinfosec.com/prompt-zine/) challenges, both of which have their own unique difficulties. In "Choose Wisely" I had a hell of a time finishing the picross puzzle, so much so that I turned to an online [picross solver](http://a.teall.info/nonogram/) to finish it. I continually ran into an issue in one section of the puzzle; I realized a couple of times that I wrote down the codes wrong so I fixed that but after erasing so many times the page in the magazine became unusable for the puzzle. I converted it to an excel sheet (the hard way... block by block...) and got farther than before, but still ran into issues. So eventually I turned to the solver and got through. Once in, the escape room was fairly simple for me. For the "Better Together" issue I had no issue whatsoever solving the challenge. However, I'm still going through the CTF challenges that you access afterwards. (And if the indicators are correct, there are still some that no one has solved yet!) One of the cool things to me about these CTFs are that I learned how to take a given .pcap file that contained network traffic from Thunderbird and contained an image attachment, and you have to decode the image to view it. I've never done that before, so it was a blast learning how that works!
+
+Since I'm at the actual "pentesting" part of the eJPT course, I decided to supplement the trainings with the [PortSwigger Web Security Academy](https://portswigger.net/web-security). After finding out that this was done by the same guy who wrote ["The Web Application Hacker's Handbook"](https://bookshop.org/books/the-web-application-hacker-s-handbook-finding-and-exploiting-security-flaws/9781118026472) this course quickly jumped up my list of things I want to do. Using [Rana Khalil's YouTube videos](https://www.youtube.com/c/RanaKhalil101) along with it have been helpful.
+
+Outside of the strictly "security" stuff, I also purchased everything I need to run ethernet throughout my home. I ended up going with some "smart managed" switches so I can set up VLANs to keep my and my partner's work traffic separate, as well as setting up certain parts of the network on a VPN as opposed to it being stricly on devices. (This part I'm still anticipating, as I haven't set up any of the switches yet.)

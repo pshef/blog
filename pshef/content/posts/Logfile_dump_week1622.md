@@ -16,6 +16,8 @@ Additionally, I ordered a new keyboard, the [Moonlander MK I](https://www.zsa.io
 
 I've completely replaced nano with neovim. I'm still at the point where vim is taking me longer, but I can see how it could speed up productivity.
 
+In reference to my trouble with RITA/Bettercap in my post last week, someone pointed out that I probably needed to forward all the traffic back onto the default gateway. While this is probably correct and all I need to do, it's difficult to keep trying when my shenanigans are not always appreciated in this household. It will have to go back on hold until I have the time to break things again.
+
 If you couldn't tell, I've been doing mostly research into different things the past few weeks as opposed to doing labs or CTFs. That's not exactly intentional, but sometimes I just go down rabit holes until I figure something out even if it detracts from my goals (eJPT, Network+).
 
 That's all, folks!

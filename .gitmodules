@@ -5,3 +5,6 @@
 	path = pshef/public
 	url = https://github.com/pshef/pshef.github.io.git
 	branch = main
+[submodule "pshef/pshef.github.io"]
+	path = pshef/pshef.github.io
+	url = git@github.com:pshef/pshef.github.io.git

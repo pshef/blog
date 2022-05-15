@@ -3,8 +3,4 @@
 	url = https://github.com/wangchucheng/hugo-eureka.git
 [submodule "pshef/public"]
 	path = pshef/public
-	url = https://github.com/pshef/pshef.github.io.git
-	branch = main
-[submodule "pshef/pshef.github.io"]
-	path = pshef/pshef.github.io
 	url = git@github.com:pshef/pshef.github.io.git

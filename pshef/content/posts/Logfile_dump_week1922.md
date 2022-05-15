@@ -1,5 +1,5 @@
 ---
-title: "Logfile_dump_week1922"
+title: "Logfile_dump Week19/22"
 date: 2022-05-15T17:46:48-05:00
 draft: true
 author: Christopher

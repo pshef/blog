@@ -1,6 +1,6 @@
 [submodule "pshef/public"]
 	path = pshef/public
-	url = git@github.com:pshef/pshef.github.io.git
+	url = https://github.com/pshef/pshef.github.io.git
 [submodule "pshef/themes/eureka"]
 	path = pshef/themes/eureka
 	url = https://github.com/wangchucheng/hugo-eureka.git

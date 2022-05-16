@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>Logfile_dump Week 16/22 | PShef&#39;s Blog</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.0" />
+<link rel="stylesheet" href="https://pshef.github.io/css/eureka.min.css">
+<script defer src="https://pshef.github.io/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://pshef.github.io/images/icon_hu094944a0cdbacea55dfeae2e1f7eb92e_14855_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://pshef.github.io/images/icon_hu094944a0cdbacea55dfeae2e1f7eb92e_14855_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="This week, it&rsquo;s been a week. A calendar week. I have potentially big news, but until the ink dries I can&rsquo;t say specifics. But keep an eye on the blog for updates!
+This week I took a course of regular expressions. Having been mystified by them for quite some time, I now feel like I have some understanding of how they work, but because I&rsquo;m not parsing text on a daily basis I haven&rsquo;t developed a familiarity with them to the point where I&rsquo;m comfortable saying &ldquo;I know how to use regex.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"https://pshef.github.io/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Logfile_dump Week 16/22",
+      "item":"https://pshef.github.io/posts/logfile_dump_week1622/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://pshef.github.io/posts/logfile_dump_week1622/"
+    },
+    "headline": "Logfile_dump Week 16\/22 | PShef\u0027s Blog","datePublished": "2022-04-24T19:32:03-05:00",
+    "dateModified": "2022-04-24T19:32:03-05:00",
+    "wordCount":  646 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Christopher",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://pshef.github.io/images/icon.png"
+        }
+        },
+    "description": "This week, it\u0026rsquo;s been a week. A calendar week. I have potentially big news, but until the ink dries I can\u0026rsquo;t say specifics. But keep an eye on the blog for updates!\nThis week I took a course of regular expressions. Having been mystified by them for quite some time, I now feel like I have some understanding of how they work, but because I\u0026rsquo;m not parsing text on a daily basis I haven\u0026rsquo;t developed a familiarity with them to the point where I\u0026rsquo;m comfortable saying \u0026ldquo;I know how to use regex."
+}
+</script><meta property="og:title" content="Logfile_dump Week 16/22 | PShef&#39;s Blog" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://pshef.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://pshef.github.io/posts/logfile_dump_week1622/" />
+
+
+
+
+<meta property="og:description" content="This week, it&rsquo;s been a week. A calendar week. I have potentially big news, but until the ink dries I can&rsquo;t say specifics. But keep an eye on the blog for updates!
+This week I took a course of regular expressions. Having been mystified by them for quite some time, I now feel like I have some understanding of how they work, but because I&rsquo;m not parsing text on a daily basis I haven&rsquo;t developed a familiarity with them to the point where I&rsquo;m comfortable saying &ldquo;I know how to use regex." />
+
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="PShef&#39;s Blog" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2022-04-24T19:32:03-05:00" />
+
+
+<meta property="article:modified_time" content="2022-04-24T19:32:03-05:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 ps-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">PShef&#39;s Blog</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">About</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">Posts</a>
+            <a href="https://github.com/pshef" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">GitHub</a>
+            <a href="https://twitter.com/pshef5" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Twitter</a>
+            <a href="https://linkedin.com/in/christopher-h-pshef" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">LinkedIn</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="grow pt-16">
+    <div class="ps-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">Logfile_dump Week 16/22</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="me-6 my-2">
+        <i class="fas fa-calendar me-1"></i>
+        <span>2022-04-24</span>
+    </div>
+    <div class="me-6 my-2">
+        <i class="fas fa-clock me-1"></i>
+        <span>4 min read</span>
+    </div>
+    
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <p>This week, it&rsquo;s been a week. A calendar week. I have potentially big news, but until the ink dries I can&rsquo;t say specifics. But keep an eye on the blog for updates!</p>
+<p>This week I took a course of regular expressions. Having been mystified by them for quite some time, I now feel like I have <em>some</em> understanding of how they work, but because I&rsquo;m not parsing text on a daily basis I haven&rsquo;t developed a familiarity with them to the point where I&rsquo;m comfortable saying &ldquo;I know how to use regex.&rdquo; But it&rsquo;ll come.  The course is another great example of why Antisyphon is one of the best training platforms out there, in my humble opinion. Next on my list is Intro to Security (the follow-up to the Intro to SOC course), and I&rsquo;m very excited for it! It&rsquo;s unlikely that I&rsquo;ll be able to attend live, but nonetheless I still learn a lot through re-watches.</p>
+<p>I bought a new computer mouse, the Logitech MX Master 3. I had really high hopes for it, especially considering its price, but alas I should have done more specific reading on the reviews. Despite the claim that it works on Linux, only the <em>absolute most basic features</em> work. The software the Logitech has to configure the thing, Logitech Options, is not available on Linux; despite years of people getting pissed off and asking for support, there doesn&rsquo;t seem to be any movement on that front. There are two pieces of FOSS that kind of serve that role, <a href="https://pwr-solaar.github.io/Solaar/">Solaar</a> and <a href="https://github.com/libratbag/piper">Piper</a>, and while Solaar works great in its limited scope (management of device conections with limited customizability), Piper still seems to be working out the kinks on this particular mouse. So be warned, if you only use Linux you won&rsquo;t be able to customize this mouse.</p>
+<p>The workaround I initially tried, to install and use the software in a Windows VM, didn&rsquo;t work. Like, at all. My next attempt will be to create a live USB of windows and see if I can&rsquo;t just use that (but I&rsquo;m not getting my hopes up). Logitech: get your shit together!</p>
+<p>Additionally, I ordered a new keyboard, the <a href="https://www.zsa.io/moonlander/">Moonlander MK I</a>. I&rsquo;ve never had a mechanical keyboard before, so I&rsquo;m pretty excited for this one (after reading the reviews that stated it works on Linux, so if it doesn&rsquo;t I&rsquo;m gonna be&hellip; displeased). A big thing for me with the hardware has been ergonomics and making sure that I keep my wrists and hands in good health, so I wanted to make sure that I don&rsquo;t screw anything up by keeping my hands in odd positions. I already type with my hands &ldquo;floating&rdquo; (wrists not resting on anything) but I still have to keep them slightly pronated which I want to avoid. I&rsquo;ve also been doing grip and forearm exercises to make sure I don&rsquo;t hurt anything. Eventually I&rsquo;ll get around to writing up and posting my regimine for wrist health.</p>
+<p>I&rsquo;ve completely replaced nano with neovim. I&rsquo;m still at the point where vim is taking me longer, but I can see how it could speed up productivity.</p>
+<p>In reference to my trouble with RITA/Bettercap in my post last week, someone pointed out that I probably needed to forward all the traffic back onto the default gateway. While this is probably correct and all I need to do, it&rsquo;s difficult to keep trying when my shenanigans are not always appreciated in this household. It will have to go back on hold until I have the time to break things again.</p>
+<p>If you couldn&rsquo;t tell, I&rsquo;ve been doing mostly research into different things the past few weeks as opposed to doing labs or CTFs. That&rsquo;s not exactly intentional, but sometimes I just go down rabit holes until I figure something out even if it detracts from my goals (eJPT, Network+).</p>
+<p>That&rsquo;s all, folks!</p>
+
+        </div>
+        
+        
+        
+
+
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">Previous</span>
+        <a href="https://pshef.github.io/posts/logfile_dump_week1722/" class="block">Logfile_dump Week 17/22</a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="https://pshef.github.io/posts/logfile_dump_week1522/" class="block">Logfile_dump Week 15/22</a>
+        
+    </div>
+</div>
+
+        
+
+
+
+    </div>
+    
+
+    
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="ps-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2022 <a href="https://pshef.work/">PShef</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

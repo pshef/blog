@@ -2,5 +2,5 @@
 	path = pshef/themes/eureka
 	url = https://github.com/wangchucheng/hugo-eureka.git
 [submodule "public"]
-	path = public
+	path = pshef/public
 	url = https://github.com/pshef/pshef.github.io.git

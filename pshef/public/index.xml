@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PShef&#39;s Blog</title>
+    <link>https://pshef.github.io/</link>
+    <description>Recent content on PShef&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2022 &lt;a href=&#34;https://pshef.work/&#34;&gt;PShef&lt;/a&gt;
+</copyright>
+    <lastBuildDate>Sun, 08 May 2022 21:02:06 -0500</lastBuildDate><atom:link href="https://pshef.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logfile_dump Week 18/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1822/</link>
+      <pubDate>Sun, 08 May 2022 21:02:06 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1822/</guid>
+      <description>This week marked the &amp;ldquo;first week&amp;rdquo; at my new job! Kind of!
+In an effort to help my former job out (since after all this is an internal transfer), I am still going to remain there until June. I&amp;rsquo;ll be slowly picking more and more things up at my new job, and then when June hits it&amp;rsquo;ll be full-force working-in-my-pjs mode. I started getting the equipment in so I can now see how my office will actually be laid out.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 17/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1722/</link>
+      <pubDate>Sun, 01 May 2022 13:31:28 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1722/</guid>
+      <description>Well the ink has dried, so I guess I can share the good news that I mentioned last week. I accepted a job offer for my first infosec job as an Information Security Analyst! It&amp;rsquo;s an internal transfer with the company I already work for which really helped get my foot in the door. There&amp;rsquo;s no official start date yet as it needs to get worked out between the higher ups, but it&amp;rsquo;s definitely happening.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 16/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1622/</link>
+      <pubDate>Sun, 24 Apr 2022 19:32:03 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1622/</guid>
+      <description>This week, it&amp;rsquo;s been a week. A calendar week. I have potentially big news, but until the ink dries I can&amp;rsquo;t say specifics. But keep an eye on the blog for updates!
+This week I took a course of regular expressions. Having been mystified by them for quite some time, I now feel like I have some understanding of how they work, but because I&amp;rsquo;m not parsing text on a daily basis I haven&amp;rsquo;t developed a familiarity with them to the point where I&amp;rsquo;m comfortable saying &amp;ldquo;I know how to use regex.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 15/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1522/</link>
+      <pubDate>Sun, 17 Apr 2022 20:04:09 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1522/</guid>
+      <description>Really not feeling this post this week. Still dealing with pretty bad food poisoning that started Friday evening, so all of the time I had to do projects kinda fell to the wayside because I didn&amp;rsquo;t have the energy.
+I did try to get the sweet combo of RITA/Zeek/MongoDB/Bettercap up and running on my raspberry pi again. I got Bettercap running which was the hurdle I had last time I tried, but now it seems that my RITA installation ain&amp;rsquo;t feeling it.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 14/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1422/</link>
+      <pubDate>Sun, 10 Apr 2022 19:31:30 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1422/</guid>
+      <description>Four things for this week!
+First, I&amp;rsquo;m trying to tackle vim. More specifically, Neo vim. While somewhat old, I stumbled upon Daniel Miessler&amp;rsquo;s Vim Config Update: 2019 Edition that has peaked my interest. While I&amp;rsquo;m certainly no avimionado (get it? Aficionado + vim?) I do like some of the tweaks that can be done to vim, and really navigation isn&amp;rsquo;t that difficult and I know how to exit, so there&amp;rsquo;s not a lot stopping me from learning more.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 13/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1322/</link>
+      <pubDate>Sun, 03 Apr 2022 21:09:18 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1322/</guid>
+      <description>Helllooooo!
+This week I got in all of the stuff to run ethernet through my residence. I&amp;rsquo;ll be measuring out the runs now that everything is prepped for it, and the last thing I need is a drywall saw and I&amp;rsquo;ll be good! Should be finished by next weekened. I&amp;rsquo;ll end up running between eight and twelve lines so hopefully it goes smoothly and I don&amp;rsquo;t have major issues making the plugs.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 12/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1222/</link>
+      <pubDate>Sun, 27 Mar 2022 13:56:05 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1222/</guid>
+      <description>This week I spent a lot of time working on the BHIS Zine challenges, both of which have their own unique difficulties. In &amp;ldquo;Choose Wisely&amp;rdquo; I had a hell of a time finishing the picross puzzle, so much so that I turned to an online picross solver to finish it. I continually ran into an issue in one section of the puzzle; I realized a couple of times that I wrote down the codes wrong so I fixed that but after erasing so many times the page in the magazine became unusable for the puzzle.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 11/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1122/</link>
+      <pubDate>Sun, 20 Mar 2022 14:36:15 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1122/</guid>
+      <description>It has been a mindnumbingly busy week at work. Here&amp;rsquo;s some of what I did outside of it:
+ I got the BHIS zine in and cracked the cipher in their cipher issue. (Side note, I wish they&amp;rsquo;d put the issue number in there somewhere.) I managed to get into the CTF website, but didn&amp;rsquo;t try out the challenges in there yet. I&amp;rsquo;ve decided that Go is going to be the programming language for me.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 10/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week1022/</link>
+      <pubDate>Sun, 13 Mar 2022 11:05:47 -0500</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week1022/</guid>
+      <description>What a busy week at work! Last week started our Saturday shifts for the season which takes up a good chunk of project time from me. This week I won&amp;rsquo;t have a daily breakdown of what I did, I&amp;rsquo;ll just list everything out:
+ Watched more Network+ and SC-900 videos Started planning a project to run ethernet lines throughout the house. As it currently stands, 98% of everything in my house is on WiFi (a lot of IoT devices), and I want to get away from some of that.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 9/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week922/</link>
+      <pubDate>Sun, 06 Mar 2022 20:15:55 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week922/</guid>
+      <description>Sunday 02/27  Bought a new monitor! The Samsung 27&amp;quot; T350. First time having multiple monitors. Wrong product, still happy, not going to complain. (Best Buy had it labeled wrong, but I&amp;rsquo;m not bitter about it. I&amp;rsquo;M NOT BITTER ABOUT IT.)  Monday - Thursday 02/28-03/03  Went through the Antisyphon Training&amp;rsquo;s SOC Skills class. Will do a review on it once I re-watch the videos in the coming couple of weeks.</description>
+    </item>
+    
+    <item>
+      <title>FIDO2 As Login</title>
+      <link>https://pshef.github.io/posts/fido2_as_login/</link>
+      <pubDate>Sat, 05 Mar 2022 11:49:09 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/fido2_as_login/</guid>
+      <description>I&amp;rsquo;m a huge fan of FIDO2.
+I use my FIDO2 key on every account I can. I have a stand-alone FIDO2 USB, I have two of the Nitrokey 3&amp;rsquo;s (that will eventually also be able to serve as FIDO2, GPG key storage, limited password manager, etc., but currently only has FIDO2), and a hardware password manager that also has some cool FIDO2 implementation with it. I can&amp;rsquo;t get enough of these things!</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 8/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week822/</link>
+      <pubDate>Sun, 27 Feb 2022 17:37:02 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week822/</guid>
+      <description>Sunday  Did a couple of Try Hack Me rooms.  Monday  Started some SC-900 videos. Got an Obsidian.md sync account. My Obsidian vaults are where I take my notes for studying different course material, but I still use Standard Notes for everything else. The main reason I did this is that the Obsidian platform is very intuitive for taking notes, and because it allows for the referencing of different entries by entire notes, sections, tags, etc.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 7/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week722/</link>
+      <pubDate>Sun, 20 Feb 2022 14:55:36 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week722/</guid>
+      <description>This week was a little different, as I didn&amp;rsquo;t have any large projects I took on. However, here&amp;rsquo;s a brain dump of what I did for the week:
+ Started watching Network+ course videos from Mike Meyers and ITPro.TV. I&amp;rsquo;m currently not scheduling to sit the exam, however I will at some point this year. Finished the audio book version of Phillip Wylie&amp;rsquo;s and Kim Crawley&amp;rsquo;s book &amp;ldquo;The Pentester Blueprint&amp;rdquo;. Listened to Black Hills 02/11 podcast episode.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 6/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week622/</link>
+      <pubDate>Sun, 13 Feb 2022 13:55:05 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week622/</guid>
+      <description>Sunday 02/06  Listened to Black Hills 02/04 podcast episode Worked on website layout more so that blog posts will be at the top instead of my crappy About me post.  Also added links to find me at the top.    Monday 02/07  Began watching the Microsoft MS-900 course from ITPro.TV. This will be the first Microsoft-specific course (as opposed to the totally-not-a-Microsoft course that A+ is) that I watch, and I&amp;rsquo;ll eventually go through a few others from Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>A&#43; Review</title>
+      <link>https://pshef.github.io/posts/a&#43;-review/</link>
+      <pubDate>Sun, 06 Feb 2022 15:32:02 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/a&#43;-review/</guid>
+      <description>Sometime last year, I decided that I wanted to get into information security. I have no post-high school education, my limited college education had nothing to do with computers, and I&amp;rsquo;ve spent the entirety of my working life in retail or warehouse work. Once I decided to make the jump, the first thing that I read was that I need to build my foundational knowledge, and that the A+ is the most basic of basic stuff that people should know.</description>
+    </item>
+    
+    <item>
+      <title>Logfile_dump Week 5/22</title>
+      <link>https://pshef.github.io/posts/logfile_dump_week522/</link>
+      <pubDate>Sun, 06 Feb 2022 14:04:01 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/logfile_dump_week522/</guid>
+      <description>This was the final week before taking my A+ 1002 exam, so that guided the majority of my time.
+Sunday 01/30  I finally took the time to get my website started! Big thanks to Graham Helton for the inspiration. I still have no idea what I&amp;rsquo;m doing but at least I got it started.  Monday 01/31  Studied for my A+ exam. I&amp;rsquo;m watching Professor Messer videos since I already finished those from Mik Meyers and ITPro.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://pshef.github.io/posts/hello_world/</link>
+      <pubDate>Sun, 30 Jan 2022 18:29:22 -0600</pubDate>
+      
+      <guid>https://pshef.github.io/posts/hello_world/</guid>
+      <description>I&amp;rsquo;ve had blogs in the past for various reasons, including a WordPress blog for infosec that had like a grand total of three posts. I hate WordPress. So I deleted it, and made this one instead. Have fun checking this out!</description>
+    </item>
+    
+  </channel>
+</rss>

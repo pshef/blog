@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>FIDO2 As Login | PShef&#39;s Blog</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.1" />
+<link rel="stylesheet" href="https://pshef.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://pshef.github.io/js/eureka.min.4ab4e11bfa71ae0aeed55e31bbb0f8ab16c24a648722270637c4b96ea70eef4ddf17aa3e2a8131f613520e0387c1bbde.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://pshef.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://pshef.github.io/js/fontawesome.min.25c2faf9ac5ea7ba801ae09740a8ee40cb21a3921a3d261a24b560b41a60bac165e28172957558dc222694eaf97ec48a.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://pshef.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://pshef.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="I&rsquo;m a huge fan of FIDO2.
+I use my FIDO2 key on every account I can. I have a stand-alone FIDO2 USB, I have two of the Nitrokey 3&rsquo;s (that will eventually also be able to serve as FIDO2, GPG key storage, limited password manager, etc., but currently only has FIDO2), and a hardware password manager that also has some cool FIDO2 implementation with it. I can&rsquo;t get enough of these things!">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"https://pshef.github.io/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"FIDO2 As Login",
+      "item":"https://pshef.github.io/posts/fido2_as_login/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://pshef.github.io/posts/fido2_as_login/"
+    },
+    "headline": "FIDO2 As Login | PShef\u0027s Blog","datePublished": "2022-03-05T11:49:09-06:00",
+    "dateModified": "2022-03-05T11:49:09-06:00",
+    "wordCount":  1428 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Christopher",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://pshef.github.io/images/icon.png"
+        }
+        },
+    "description": "I\u0026rsquo;m a huge fan of FIDO2.\nI use my FIDO2 key on every account I can. I have a stand-alone FIDO2 USB, I have two of the Nitrokey 3\u0026rsquo;s (that will eventually also be able to serve as FIDO2, GPG key storage, limited password manager, etc., but currently only has FIDO2), and a hardware password manager that also has some cool FIDO2 implementation with it. I can\u0026rsquo;t get enough of these things!"
+}
+</script><meta property="og:title" content="FIDO2 As Login | PShef&#39;s Blog" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://pshef.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://pshef.github.io/posts/fido2_as_login/" />
+
+
+
+
+<meta property="og:description" content="I&rsquo;m a huge fan of FIDO2.
+I use my FIDO2 key on every account I can. I have a stand-alone FIDO2 USB, I have two of the Nitrokey 3&rsquo;s (that will eventually also be able to serve as FIDO2, GPG key storage, limited password manager, etc., but currently only has FIDO2), and a hardware password manager that also has some cool FIDO2 implementation with it. I can&rsquo;t get enough of these things!" />
+
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="PShef&#39;s Blog" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2022-03-05T11:49:09-06:00" />
+
+
+<meta property="article:modified_time" content="2022-03-05T11:49:09-06:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">PShef&#39;s Blog</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">About</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">Posts</a>
+            <a href="https://github.com/pshef" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">GitHub</a>
+            <a href="https://twitter.com/pshef5" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Twitter</a>
+            <a href="https://linkedin.com/in/christopher-h-pshef" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">LinkedIn</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+  
+  
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
+    <div
+      class="lg:col-start-2 bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+    >
+      <article class="prose">
+  <h1 class="mb-4">FIDO2 As Login</h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-03-05</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>7 min read</span>
+  </div>
+
+  
+
+  
+</div>
+
+
+  
+  
+
+  <p>I&rsquo;m a huge fan of FIDO2.</p>
+<p>I use my FIDO2 key on every account I can. I have a stand-alone <a href="https://shop.nitrokey.com/shop/product/nitrokey-fido2-55">FIDO2 USB</a>, I have two of the <a href="https://shop.nitrokey.com/shop/product/nk3cn-nitrokey-3c-nfc-148">Nitrokey 3&rsquo;s</a> (that will eventually also be able to serve as FIDO2, GPG key storage, limited password manager, etc., but currently only has FIDO2), and a <a href="https://onlykey.io/">hardware password manager</a> that also has some cool FIDO2 implementation with it. I can&rsquo;t get enough of these things! FIDO2 as my 2nd factor for authentication is tremendously easier than a TOTP in my opinion, as long as you&rsquo;re on a device that can accept FIDO2 input. (That&rsquo;s why I got a NFC FIDO2 key.)</p>
+<p>And while I use FIDO2 for pretty much everything, there&rsquo;s one thing that I&rsquo;ve wanted to use my Nitrokeys for, and that&rsquo;s for my actual computer.</p>
+<p>I&rsquo;ve gotten the first steps of this done. There&rsquo;s documentation out there, but when I first got my FIDO2 devices the information was less than clear. Since then, both <a href="https://docs.nitrokey.com/fido2/linux/desktop-login.html#modify-the-pluggable-authentication-module-pam">Nitrokey</a> and <a href="https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F">Yubikey</a> have improved their documentation on the process. Here&rsquo;s what I did, what I learned, the one problem I ran into, and what I&rsquo;m going to do next with this. <strong>Note: some of this does require root permissions, so you&rsquo;ll want to leave a terminal open that has sudo already authenticated, or just be bold and use <code>sudo su</code> and hope you don&rsquo;t mess anything else up.</strong></p>
+<h3 id="process">Process</h3>
+<p>There&rsquo;s no need to reinvent the wheel too much here. If you want to read the good directions, click through the Nitrokey and Yubikey directions I linked to above. All I want to do here is <em>briefly</em> put down the steps I took to get FIDO2 on my computer.</p>
+<ol>
+<li>
+<p>The first thing I did was <em>create a backup user</em>. Give it a good password, and just leave it there. If you screw something up to where you can&rsquo;t log back into your account or <code>sudo</code> to change a file, you&rsquo;ll need this account to fix it. I did it through my Pop_os GUI: <code>Settings</code> &gt; <code>Users</code> &gt; <code>Unlock</code> &gt; <code>Add User...</code>. You can do it through the CLI too if you want.</p>
+</li>
+<li>
+<p>Next you need to import <code>rules</code> so that FIDO2 can be recognized. Because I&rsquo;m using my Nitrokey, I used their ruleset:</p>
+</li>
+</ol>
+<pre><code>$ cd /etc/udev/rules.d/
+$ sudo wget https://raw.githubusercontent.com/Nitrokey/libnitrokey/master/data/41-nitrokey.rules
+$ sudo systemctl restart udev
+</code></pre>
+<ol start="3">
+<li>Make sure libpam-u2f is installed</li>
+</ol>
+<pre><code>$ sudo apt update &amp;&amp; sudo apt install libpam-u2f
+</code></pre>
+<ol start="4">
+<li>Make a directory to generate the key in. (Because I have a Nitrokey 2 already, this was already created.)</li>
+</ol>
+<pre><code>$ mkdir ~/.config/Nitrokey
+</code></pre>
+<ol start="5">
+<li>To generate the U2F config file and then move it to a location that will require root to edit (I picked <code>/etc</code> as an example, but you can put it anywhere), run the command:</li>
+</ol>
+<pre><code>$ pamu2fcfg &gt; ~/.config/Nitrokey/u2f_keys 
+$ sudo mv ~/.config/Nitrokey /etc
+</code></pre>
+<ol start="6">
+<li>The &ldquo;module string&rdquo; that will be used to edit the files will be:</li>
+</ol>
+<pre><code>auth &lt;control flag&gt; pam_u2f.so authfile=/path/to/u2f_keys
+</code></pre>
+<p>(Where <code>/path/to/u2f_keys</code> is wherever you moved the file in step 5.)</p>
+<p>Now you have two options: you can either edit <code>/etc/pam.d/common-auth</code> by placing this module string at either the beginning or the end, and this will now require your FIDO2 key for any authentication that utilizes <code>@include common-auth</code> in it; or you can edit <code>/etc/pam.d/sudo</code>, <code>/etc/pam.d/gdm-password</code>, and <code>/etc/pam.d/login</code> individually and insert the module string after the <code>@include common-auth</code> line. The first choice will be a catch-all for these authentication processes, whereas the second choice will allow you to pick and choose which process you want the 2nd factor to be required for, for example if you want to require FIDO2 to log into your account but don&rsquo;t care if you need it for using sudo.</p>
+<p>In the module string that I have right now, I used the control flag of <code>sufficient</code> for reasons I&rsquo;ll get to in a moment, and I highly recommend you use <code>sufficient</code> to start off with until you know everything is working correctly. You can also add flags that will have your computer prompt you to touch your FIDO2 device. Mine in use looks like:</p>
+<pre><code>auth sufficient pam_u2f.so authfile=/path/to/u2f_keys cue prompt
+</code></pre>
+<p>I have this using the second options above, including it in <code>sudo</code>, <code>gdm-password</code>, and <code>login</code>.</p>
+<p>If you end up choosing path 1, <a href="https://support.system76.com/articles/yubikey-login/">Pop_os</a> says you should add  your modification to the beginning of <code>common-auth</code>. (This module string is different from what Pop_os has, and that&rsquo;s because they&rsquo;re using a Yubikey, which has its own libraries and shit.) Nitrokey just says to &ldquo;add&rdquo; it. In my testing, the only difference is if you&rsquo;re prompted to touch your FIDO2 before or after your password. If you put it at the top, you have to press the FIDO2 before entering your password; if you put it at the bottom, you input your password first. (Note: if your FIDO2 device isn&rsquo;t plugged in when you input your password and you&rsquo;re using the <code>required</code> or <code>requisite</code> control flags, it&rsquo;ll just keep telling you you&rsquo;ve used the wrong password as opposed to telling you to input your FIDO2 key. In this case if your module string is at the top, you&rsquo;ll just automatically get told you can&rsquo;t login and receive three failed login attempts; if it&rsquo;s at the bottom, you have to keep inputting your password until you use up your tries or plug in your key. Personal preference here.)</p>
+<p>BUT WAIT! Hopefully you didn&rsquo;t just type in what I told you to without reading ahead. Before you save things and close out, and potentially screwing yourself over and locking yourself out of your account if you typed something wrong, go ahead and open up a second terminal and try <code>sudo echo test</code>. If you configured everything right, you should be prompted for both your password and your FIDO2 device. If you messed up somewhere, at least you&rsquo;re still able to edit the files in your other terminal (since you need to be root to edit anything in <code>/etc/pam.d</code>). If you closed out your root terminal and you messed something up, well, that&rsquo;s why I told you to make that backup user.</p>
+<p>At this point you&rsquo;re technically done, but you can play around with things (like different control flags) if you want. Feel free to set yours to <code>required</code> if you want. I tried it and it works fine. Trust me. (But it&rsquo;s not my fault if something breaks!)</p>
+<p>I have noticed that with how I have everything set up, when I restart my computer I&rsquo;m asked to unlock my keyring even after logging into my account. It&rsquo;s only once, so not really a big deal.</p>
+<h3 id="problems">Problems</h3>
+<p>There&rsquo;s one problem I ran into, and one kind-of-a-problem-but-not-really problem. The actual problem, that I haven&rsquo;t investigated yet, is that I&rsquo;m unable to add backup FIDO2 keys. All of the documentation says to use:</p>
+<pre><code>$ pamu2fcfg -n &gt;&gt; /path/to/u2f_keys
+</code></pre>
+<p>However, when I do this I&rsquo;m prompted to input a PIN for <code>/dev/hidraw1</code>. Nitorkey FIDO2 devices don&rsquo;t allow for PINs, so I&rsquo;m unable to add a backup FIDO2 device at the moment. A super quick Google search was not fruitful but I&rsquo;m sure it&rsquo;s out there.</p>
+<p>Every time I tried this, it also overwrote my u2f_keys file even when I used a test file. Not sure why.</p>
+<p>Because of this, my kind-of problem is simply that none of my other FIDO2 devices are standalone FIDO2 devices. I don&rsquo;t know if this plays a role in being able to add a backup or not, but when I tried leaving in my standalone Nitrokey FIDO2 and then running the above command to add the FIDO2 from my Nitrokey 3, it didn&rsquo;t even register that I tried to use the Nitrokey 3. I also tried to use <code>pamu2fcfg -n &gt; /path/to/completely/different/file</code> that I was going to just append to my <code>u2f_keys</code> file but I still get the prompt for the <code>hidraw1</code> PIN.</p>
+<h3 id="next-steps">Next Steps</h3>
+<p>The first thing I need to do now is figure out what&rsquo;s going on with the PIN issue. I need to have a surefire way to have a backup FIDO2 device configured so I&rsquo;m not S.O.L. if something happens. Once I get this done, I&rsquo;m going to require FIDO2 for logging into the user account, but have it be a single authentication factor for sudo.</p>
+<p>At this point, that&rsquo;s all I really am interested in doing for FIDO2 at the moment. I&rsquo;ve wanted to get my Nitrokey 2 to serve as my LUKS encryption key for a while now and want to tackle that at some point, but I decided to wait until all the firmware is updated for Nitrokey 3 and I&rsquo;ll just use that instead.</p>
+
+</article>
+
+
+      
+
+      
+
+
+
+      
+
+      
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >Previous</span
+        >
+        <a href="https://pshef.github.io/posts/logfile_dump_week922/" class="block">Logfile_dump Week 9/22</a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">Next</span>
+        <a href="https://pshef.github.io/posts/logfile_dump_week822/" class="block">Logfile_dump Week 8/22</a>
+      
+    </div>
+  </div>
+
+
+      
+
+
+
+    </div>
+    
+
+    
+    
+  </div>
+
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        hljs.highlightAll();
+      });
+    </script>
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2022 <a href="https://pshef.work/">PShef</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>

@@ -1,41 +1,58 @@
 <!DOCTYPE html>
-<html lang='en' dir='ltr' ><meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<html
+  lang="en"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <title>Logfile_dump Week 13/22 | PShef&#39;s Blog</title>
 
-<meta name="generator" content="Hugo Eureka 0.9.0" />
-<link rel="stylesheet" href="https://pshef.github.io/css/eureka.min.css">
-<script defer src="https://pshef.github.io/js/eureka.min.js"></script>
+<meta name="generator" content="Hugo Eureka 0.9.1" />
+<link rel="stylesheet" href="https://pshef.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://pshef.github.io/js/eureka.min.4ab4e11bfa71ae0aeed55e31bbb0f8ab16c24a648722270637c4b96ea70eef4ddf17aa3e2a8131f613520e0387c1bbde.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/solarized-light.min.css"
    media="print"
   onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
    crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
      crossorigin></script>
-
-<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
-   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+<link rel="stylesheet" href="https://pshef.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
 
 
+<script defer type="text/javascript" src="https://pshef.github.io/js/fontawesome.min.25c2faf9ac5ea7ba801ae09740a8ee40cb21a3921a3d261a24b560b41a60bac165e28172957558dc222694eaf97ec48a.js"></script>
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
-   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
   onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
-  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
-   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     renderMathInElement(document.body, {
@@ -50,12 +67,12 @@
 </script>
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
-  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://pshef.github.io/images/icon_hu094944a0cdbacea55dfeae2e1f7eb92e_14855_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://pshef.github.io/images/icon_hu094944a0cdbacea55dfeae2e1f7eb92e_14855_180x180_fill_box_center_3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pshef.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://pshef.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_3.png">
 
 <meta name="description"
   content="Helllooooo!
@@ -141,9 +158,12 @@ This week I got in all of the stuff to run ethernet through my residence. I&rsqu
 
 
 
-<body class="flex flex-col min-h-screen">
-  <header class="fixed flex items-center w-full min-h-16 ps-scrollbar z-50 bg-secondary-bg shadow-sm">
-    <div class="w-full max-w-screen-xl mx-auto"><script>
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
     let storageColorScheme = localStorage.getItem("lightDarkMode")
     if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
         document.getElementsByTagName('html')[0].classList.add('dark')
@@ -209,36 +229,43 @@ This week I got in all of the stuff to run ethernet through my residence. I&rsqu
     });
 </script>
 </div>
-  </header>
-  <main class="grow pt-16">
-    <div class="ps-scrollbar">
-      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
-
-
-<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+  
+  
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
     <div
-        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">Logfile_dump Week 13/22</h1>
-        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
-    <div class="me-6 my-2">
-        <i class="fas fa-calendar me-1"></i>
-        <span>2022-04-03</span>
-    </div>
-    <div class="me-6 my-2">
-        <i class="fas fa-clock me-1"></i>
-        <span>3 min read</span>
-    </div>
-    
-    
+      class="lg:col-start-2 bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+    >
+      <article class="prose">
+  <h1 class="mb-4">Logfile_dump Week 13/22</h1>
 
-    
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-04-03</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>3 min read</span>
+  </div>
+
+  
+
+  
 </div>
-        
-        
-        
 
-        <div class="content">
-            <p>Helllooooo!</p>
+
+  
+  
+
+  <p>Helllooooo!</p>
 <p>This week I got in all of the stuff to run ethernet through my residence. I&rsquo;ll be measuring out the runs now that everything is prepped for it, and the last thing I need is a drywall saw and I&rsquo;ll be good! Should be finished by next weekened. I&rsquo;ll end up running between eight and twelve lines so hopefully it goes smoothly and I don&rsquo;t have major issues making the plugs.</p>
 <p>For actual cybersecurity stuff, I ran into a problem with INE&rsquo;s new lab format (again). Instead of starting up the box and dumping me into the desktop it asked me to log into <em>their</em> Apache account. At this point, I&rsquo;m so frustrated with the platform I might just do all of my learning elsewhere and be done with them after the eJPT. They took &ldquo;don&rsquo;t fix what isn&rsquo;t broke&rdquo; and said &ldquo;well let&rsquo;s just break it first&rdquo; and ran with it. Pretty disappointing when I had high hopes for them.</p>
 <p>I continued watching some of Rana Khalil&rsquo;s videos after I signed up for her <a href="https://academy.ranakhalil.com/">academy</a>. I find her videos to be easy to follow, and a great supplement to the <a href="https://portswigger.net/web-security">Portswigger Academy</a> and the webapp tester&rsquo;s handbook that I mentioned last week.</p>
@@ -247,57 +274,65 @@ This week I got in all of the stuff to run ethernet through my residence. I&rsqu
 <p>On the note of the charm.sh stuff, I did have an idea of setting up a terminal user interface to run different scripts and stuff for CTFs and bug bounties (when I get to that point). But I&rsquo;m pretty far out from getting that done.</p>
 <p>That&rsquo;s about it for last week! Duces.</p>
 
-        </div>
-        
-        
-        
+</article>
 
 
-        
-        
-        
-        
-<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+      
+
+      
+
+
+
+      
+
+      
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
     <div>
-        
-        <span class="block font-bold">Previous</span>
+      
+        <span class="text-primary-text block font-bold"
+          >Previous</span
+        >
         <a href="https://pshef.github.io/posts/logfile_dump_week1422/" class="block">Logfile_dump Week 14/22</a>
-        
+      
     </div>
-    <div class="md:text-right mt-4 md:mt-0">
-        
-        <span class="block font-bold">Next</span>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">Next</span>
         <a href="https://pshef.github.io/posts/logfile_dump_week1222/" class="block">Logfile_dump Week 12/22</a>
-        
+      
     </div>
-</div>
-
-        
+  </div>
 
 
+      
 
-    </div>
-    
 
-    
-    
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', ()=>{
-        hljs.initHighlightingOnLoad();
-    })
-</script>
 
-      </div>
     </div>
     
-  </main>
-  <footer class="ps-scrollbar">
-    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+
+    
+    
+  </div>
+
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        hljs.highlightAll();
+      });
+    </script>
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
     <p class="text-sm text-tertiary-text">&copy; 2022 <a href="https://pshef.work/">PShef</a>
  &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
 </div></div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

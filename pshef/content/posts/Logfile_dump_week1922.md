@@ -1,7 +1,7 @@
 ---
 title: "Logfile_dump Week19/22"
 date: 2022-05-15T17:46:48-05:00
-draft: true
+draft: false
 author: Christopher
 ---
 With the exception of a chair, my office is completely set up now. My [Moonlander](https://www.zsa.io/moonlander/) keyboard is in and I've been practicing using it how they recommend (laid flat and without chaning the key layout) and while my typing has slowed down somewhat, I'm getting the hang of it. WIth regular typing I'm pretty close to how I had been with a regular keyboard, but when it comes to using special characters or the "number pad" it still takes a lot of time. I keep the interactive layout up so I can see what everything is which certainly helps!

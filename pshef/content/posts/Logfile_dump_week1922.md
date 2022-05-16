@@ -12,3 +12,4 @@ This week is the Antisyphon [Getting Started in Security](https://www.antisyphon
 
 Along those lines, I'm hoping to attend my first Pentester Academy [Beginner's Active Directory bootcamp](https://bootcamps.pentesteracademy.com/course/ad-beginner-jun-22) next month. Some of my coworkers have mentioned possibly attending so I think it will help with both my education and my relationship with my coworkers.
 
+Totally unrelated to anything that has happened to me recently (please don't go look at my git commit messages...) I should really learn git better...

@@ -4,3 +4,4 @@
 [submodule "public"]
 	path = pshef/public
 	url = https://github.com/pshef/pshef.github.io.git
+	branch = main
